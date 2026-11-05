@@ -1,0 +1,54 @@
+[
+  {
+    "id": "ORD-219601",
+    "customer": {
+      "name": "Sarah Connor",
+      "email": "sarah@example.com",
+      "phone": "",
+      "address": "42 Cyber Way",
+      "city": "LA",
+      "zip": "90001"
+    },
+    "items": [
+      {
+        "id": "prod-219588",
+        "title": "Nova Studio Monitor Stand Pro",
+        "price": 54.99,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 109.98,
+    "tax": 8.8,
+    "shipping": 0,
+    "total": 118.78,
+    "paymentMethod": "Credit Card",
+    "status": "Confirmed",
+    "createdAt": "2026-11-05T13:26:59.601Z"
+  },
+  {
+    "id": "ORD-175421",
+    "customer": {
+      "name": "Sarah Connor",
+      "email": "sarah@example.com",
+      "phone": "",
+      "address": "42 Cyber Way",
+      "city": "LA",
+      "zip": "90001"
+    },
+    "items": [
+      {
+        "id": "prod-175408",
+        "title": "Nova Studio Monitor Stand Pro",
+        "price": 54.99,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 109.98,
+    "tax": 8.8,
+    "shipping": 0,
+    "total": 118.78,
+    "paymentMethod": "Credit Card",
+    "status": "Confirmed",
+    "createdAt": "2026-11-05T13:26:15.421Z"
+  }
+]

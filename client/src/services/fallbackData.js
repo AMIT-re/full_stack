@@ -1,0 +1,326 @@
+export const initialProducts = [
+  {
+    id: "prod-1",
+    title: "Aura Pro Wireless ANC Headphones",
+    tagline: "Studio-grade acoustics with adaptive noise cancellation",
+    category: "Audio",
+    price: 249.99,
+    originalPrice: 299.99,
+    rating: 4.8,
+    reviewsCount: 128,
+    stock: 24,
+    isFeatured: true,
+    thumbnail: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&auto=format&fit=crop&q=80"
+    ],
+    description: "Immerse yourself in rich, high-fidelity sound. The Aura Pro headphones feature custom 40mm drivers, 45 hours of ultra-long battery life, multi-device Bluetooth 5.3 pairing, and premium memory foam ear cushions for all-day comfort.",
+    specs: {
+      "Battery Life": "Up to 45 hours (ANC off) / 32 hours (ANC on)",
+      "Connectivity": "Bluetooth 5.3 & 3.5mm Aux",
+      "Weight": "250g",
+      "Fast Charging": "10 min charge gives 5 hours playtime",
+      "Microphone": "4-mic beamforming array with wind reduction"
+    },
+    reviews: [
+      { id: "rev-1", user: "Marcus Vance", rating: 5, date: "2026-10-12", comment: "Outstanding sound clarity and the noise cancellation blocks out noisy office chatter effortlessly." },
+      { id: "rev-2", user: "Elena Rostova", rating: 4, date: "2026-10-25", comment: "Super comfortable for long gaming and work sessions. Battery lasts the entire week." }
+    ],
+    createdAt: "2026-09-01T10:00:00.000Z"
+  },
+  {
+    id: "prod-2",
+    title: "Apex Mechanical Keyboard RGB",
+    tagline: "Hot-swappable tactile switches with aircraft aluminum frame",
+    category: "Accessories",
+    price: 139.50,
+    originalPrice: 169.99,
+    rating: 4.9,
+    reviewsCount: 84,
+    stock: 15,
+    isFeatured: true,
+    thumbnail: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&auto=format&fit=crop&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1595225476474-87563907a212?w=800&auto=format&fit=crop&q=80"
+    ],
+    description: "Engineered for speed, durability, and customization. The Apex Mechanical Keyboard features hot-swappable custom lubricated switches, per-key RGB backlighting with 18 dynamic effects, double-shot PBT keycaps, and a magnetic wrist rest.",
+    specs: {
+      "Switch Type": "Gateron Pro Yellow (Hot-swappable)",
+      "Layout": "75% Compact (84 keys)",
+      "Backlight": "RGB with customizable macros",
+      "Connection": "Tri-mode: 2.4GHz, Bluetooth 5.1, USB-C",
+      "Chassis": "CNC Aluminum body"
+    },
+    reviews: [
+      { id: "rev-3", user: "David Chen", rating: 5, date: "2026-10-05", comment: "The typing feel and acoustic dampening are top notch out of the box. No modding required." }
+    ],
+    createdAt: "2026-09-03T11:20:00.000Z"
+  },
+  {
+    id: "prod-3",
+    title: "UltraVision 34\" Curved 4K Monitor",
+    tagline: "Ultrawide 165Hz IPS display with 99% DCI-P3 color precision",
+    category: "Electronics",
+    price: 689.00,
+    originalPrice: 799.00,
+    rating: 4.7,
+    reviewsCount: 62,
+    stock: 8,
+    isFeatured: true,
+    thumbnail: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&auto=format&fit=crop&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=800&auto=format&fit=crop&q=80"
+    ],
+    description: "Upgrade your productivity and entertainment setup. The UltraVision 34-inch curved monitor delivers crystal-clear 4K resolution (3440 x 1440), 165Hz refresh rate, 1ms response time, HDR600 certification, and a built-in 90W USB-C hub.",
+    specs: {
+      "Screen Size": "34 inches (1500R curvature)",
+      "Resolution": "3440 x 1440 (UWQHD)",
+      "Refresh Rate": "165Hz with FreeSync Premium",
+      "Ports": "2x HDMI 2.1, 1x DP 1.4, 1x USB-C 90W PD, 4x USB-A 3.2",
+      "Panel Type": "Fast IPS, 1ms GtG"
+    },
+    reviews: [
+      { id: "rev-4", user: "Sarah Jenkins", rating: 5, date: "2026-10-18", comment: "Single cable USB-C to my MacBook charges and outputs 165Hz seamlessly. Colors are breathtaking." }
+    ],
+    createdAt: "2026-09-05T09:15:00.000Z"
+  },
+  {
+    id: "prod-4",
+    title: "PulseFit Pro Smartwatch",
+    tagline: "Always-on AMOLED display with advanced ECG & GPS tracking",
+    category: "Wearables",
+    price: 189.99,
+    originalPrice: 229.99,
+    rating: 4.6,
+    reviewsCount: 95,
+    stock: 30,
+    isFeatured: true,
+    thumbnail: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+    ],
+    description: "Your comprehensive health and performance companion. Featuring dual-frequency GPS, heart rate variability monitoring, SpO2 sensor, sleep staging analysis, 5ATM water resistance, and up to 14 days of battery longevity.",
+    specs: {
+      "Display": "1.43-inch AMOLED (466x466 px, 1000 nits)",
+      "Battery": "Up to 14 days standard / 36 hours GPS mode",
+      "Water Resistance": "5 ATM (50m dive resistant)",
+      "Sensors": "Optical PPG, 3-axis Accelerometer, Gyroscope, Barometer",
+      "Compatibility": "iOS 14+ and Android 8.0+"
+    },
+    reviews: [
+      { id: "rev-5", user: "Alexander Wu", rating: 4, date: "2026-09-29", comment: "Accurate GPS pace tracking during marathons and the battery life genuinely lasts over 10 days." }
+    ],
+    createdAt: "2026-09-10T14:40:00.000Z"
+  },
+  {
+    id: "prod-5",
+    title: "ErgoFlow Precision Wireless Mouse",
+    tagline: "Sculpted ergonomic design with infinite hyper-fast scroll",
+    category: "Accessories",
+    price: 79.99,
+    originalPrice: 99.99,
+    rating: 4.7,
+    reviewsCount: 110,
+    stock: 45,
+    isFeatured: false,
+    thumbnail: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=800&auto=format&fit=crop&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=800&auto=format&fit=crop&q=80"
+    ],
+    description: "Engineered to minimize wrist fatigue while maximizing input precision. Features an electromagnetic smart scroll wheel, 8000 DPI Darkfield sensor that tracks on any surface (including glass), and quiet acoustic clicks.",
+    specs: {
+      "Sensor DPI": "200 - 8000 DPI (50 DPI increments)",
+      "Buttons": "7 programmable buttons + gesture button",
+      "Rechargeable": "USB-C, 70 days on full charge",
+      "Weight": "141g"
+    },
+    reviews: [
+      { id: "rev-6", user: "Rachel Kim", rating: 5, date: "2026-10-15", comment: "Completely solved my wrist ache from long spreadsheets and design workflows." }
+    ],
+    createdAt: "2026-09-12T08:00:00.000Z"
+  },
+  {
+    id: "prod-6",
+    title: "Lumina 4K WebCam with Ring Light",
+    tagline: "AI autofocus, dual stereo mics, and touch-adjustable illumination",
+    category: "Electronics",
+    price: 119.00,
+    originalPrice: 149.00,
+    rating: 4.5,
+    reviewsCount: 43,
+    stock: 19,
+    isFeatured: false,
+    thumbnail: "https://images.unsplash.com/photo-1588508065123-287b28e013da?w=800&auto=format&fit=crop&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1588508065123-287b28e013da?w=800&auto=format&fit=crop&q=80"
+    ],
+    description: "Broadcast-quality video for conference calls, streaming, and content creation. Delivers crisp 4K Ultra HD at 30fps or 1080p at 60fps with automatic HDR light correction and an integrated 3-level diffused ring light.",
+    specs: {
+      "Video Resolution": "4K UHD @ 30fps / 1080p @ 60fps",
+      "Field of View": "65°, 78°, and 90° adjustable",
+      "Lighting": "Integrated 3-level LED ring light (touch controlled)",
+      "Mount": "Universal clip with 1/4\" tripod thread"
+    },
+    reviews: [],
+    createdAt: "2026-09-14T16:20:00.000Z"
+  },
+  {
+    id: "prod-7",
+    title: "Zenith Active Noise Cancelling Earbuds",
+    tagline: "Pocket-sized acoustic perfection with wireless charging case",
+    category: "Audio",
+    price: 149.99,
+    originalPrice: 179.99,
+    rating: 4.8,
+    reviewsCount: 78,
+    stock: 35,
+    isFeatured: true,
+    thumbnail: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&auto=format&fit=crop&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&auto=format&fit=crop&q=80"
+    ],
+    description: "Compact earbuds delivering profound bass and crystal-clear highs. Equipped with adaptive hybrid active noise cancellation, transparency audio mode, IPX5 sweat resistance, and Qi wireless charging.",
+    specs: {
+      "Playtime": "8 hours per charge, 32 hours with wireless case",
+      "Water Resistance": "IPX5 water and sweat proof",
+      "Codecs": "LDAC, AAC, SBC",
+      "Bluetooth": "Version 5.3 Low Energy"
+    },
+    reviews: [
+      { id: "rev-7", user: "Carlos Gomez", rating: 5, date: "2026-10-20", comment: "The noise cancellation is shockingly good for earbuds this light." }
+    ],
+    createdAt: "2026-09-18T12:00:00.000Z"
+  },
+  {
+    id: "prod-8",
+    title: "OmniDock 12-in-1 Thunderbolt 4 Dock",
+    tagline: "Single-cable powerhouse for dual 4K displays and 100W PD",
+    category: "Accessories",
+    price: 199.99,
+    originalPrice: 239.99,
+    rating: 4.9,
+    reviewsCount: 51,
+    stock: 12,
+    isFeatured: false,
+    thumbnail: "https://images.unsplash.com/photo-1625842268584-8f3296236761?w=800&auto=format&fit=crop&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1625842268584-8f3296236761?w=800&auto=format&fit=crop&q=80"
+    ],
+    description: "Transform your laptop into an uncompromising desktop workstation. Offers 12 high-performance expansion ports including dual HDMI 2.1, DisplayPort 1.4, Gigabit Ethernet, SD 4.0 card reader, and 100W Power Delivery.",
+    specs: {
+      "Upstream Port": "Thunderbolt 4 / USB4 (100W PD to host)",
+      "Display Outputs": "2x HDMI 2.1, 1x DP 1.4 (Dual 4K @ 60Hz)",
+      "Ethernet": "2.5Gbps RJ45 port",
+      "Material": "Anodized space-grey aluminum"
+    },
+    reviews: [],
+    createdAt: "2026-09-20T17:30:00.000Z"
+  },
+  {
+    id: "prod-9",
+    title: "ErgoSpine Executive Mesh Chair",
+    tagline: "Dynamic lumbar adaptation with breathable 3D mesh fabric",
+    category: "Home Office",
+    price: 349.00,
+    originalPrice: 429.00,
+    rating: 4.8,
+    reviewsCount: 88,
+    stock: 6,
+    isFeatured: true,
+    thumbnail: "https://images.unsplash.com/photo-1580481077195-c3a82105e3b5?w=800&auto=format&fit=crop&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1580481077195-c3a82105e3b5?w=800&auto=format&fit=crop&q=80"
+    ],
+    description: "Constructed to provide anatomical spine support during intense work sprints. Offers 4D multi-directional armrests, responsive self-adjusting lumbar support, 135° tilt-lock mechanism, and heavy-duty smooth rollerblade caster wheels.",
+    specs: {
+      "Weight Capacity": "Up to 330 lbs (150 kg)",
+      "Material": "Kevlar-reinforced breathable mesh",
+      "Adjustability": "Seat height, depth, 4D arms, 3-angle recline",
+      "Base": "Solid polished aluminum 5-star base"
+    },
+    reviews: [
+      { id: "rev-8", user: "Nina Patel", rating: 5, date: "2026-10-22", comment: "Best ergonomic chair purchase I've ever made. Better than chairs twice the price." }
+    ],
+    createdAt: "2026-09-22T13:45:00.000Z"
+  },
+  {
+    id: "prod-10",
+    title: "HyperBeam Smart LED Desk Light Bar",
+    tagline: "Zero screen glare, auto-dimming ambient sensor, and RF puck dial",
+    category: "Home Office",
+    price: 64.99,
+    originalPrice: 79.99,
+    rating: 4.6,
+    reviewsCount: 42,
+    stock: 22,
+    isFeatured: false,
+    thumbnail: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&auto=format&fit=crop&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&auto=format&fit=crop&q=80"
+    ],
+    description: "Mounts directly to your monitor to liberate valuable desk real estate. The asymmetrical optical design directs light strictly to the workspace without reflecting onto your screen. Features an aluminum wireless rotary control dial.",
+    specs: {
+      "Color Temperature": "2700K - 6500K stepless adjustment",
+      "Controller": "2.4GHz wireless desktop dial with magnetic base",
+      "Power": "USB-C 5V/1.5A input",
+      "Monitor Compatibility": "0.4cm - 5cm thickness screens"
+    },
+    reviews: [],
+    createdAt: "2026-09-25T15:10:00.000Z"
+  },
+  {
+    id: "prod-11",
+    title: "SoundPulse Rugged Waterproof Speaker",
+    tagline: "30W deep bass, 24h battery life, and IPX7 floating protection",
+    category: "Audio",
+    price: 89.99,
+    originalPrice: 109.99,
+    rating: 4.7,
+    reviewsCount: 57,
+    stock: 0,
+    isFeatured: false,
+    thumbnail: "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&auto=format&fit=crop&q=80"
+    ],
+    description: "Ready for outdoor adventures, beach trips, or poolside gatherings. Packs dual passive radiators for rich bass response, PartySync to pair up to 100 units together, and a rugged shockproof silicone exterior.",
+    specs: {
+      "Output": "30W stereo audio with DSP enhancement",
+      "Waterproofing": "IPX7 waterproof (submersible up to 1 meter)",
+      "Battery": "6600mAh, up to 24 hours playback",
+      "Range": "100 ft (30 meters) Bluetooth 5.3"
+    },
+    reviews: [],
+    createdAt: "2026-09-28T10:30:00.000Z"
+  },
+  {
+    id: "prod-12",
+    title: "Visionary Pro VR Headset Stand & Dock",
+    tagline: "Magnetic fast-charging base with ambient lighting accents",
+    category: "Wearables",
+    price: 59.99,
+    originalPrice: 74.99,
+    rating: 4.5,
+    reviewsCount: 31,
+    stock: 14,
+    isFeatured: false,
+    thumbnail: "https://images.unsplash.com/photo-1622979135225-d2ba269bc1df?w=800&auto=format&fit=crop&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1622979135225-d2ba269bc1df?w=800&auto=format&fit=crop&q=80"
+    ],
+    description: "An elegant display stand and simultaneous fast charging station for VR headsets and touch controllers. Equipped with LED charging status indicators and overcharge protection circuitry.",
+    specs: {
+      "Compatibility": "Universal VR Headsets & Touch Controllers",
+      "Charging Time": "Approx 2.5 hours full charge",
+      "Base": "Weighted anti-slip rubberized footprint",
+      "Input": "Type-C 9V/2A"
+    },
+    reviews: [],
+    createdAt: "2026-10-01T11:00:00.000Z"
+  }
+];
