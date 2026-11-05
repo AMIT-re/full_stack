@@ -212,6 +212,8 @@ npm run build:client
 
 ---
 
-## 8. Deployment Restrictions
+## 8. Netlify Deployment
 
-> **IMPORTANT:** In strict compliance with project requirements, this application is **NOT deployed** to any cloud hosting service (Vercel, Netlify, Render, AWS, Heroku, etc.). It is intentionally configured and optimized solely for local development and demonstration.
+The root `netlify.toml` configures Netlify to install dependencies in `client`, run its Vite build, and publish `client/dist`. A fallback rewrite serves `index.html` for client-side routes, so opening or refreshing paths such as `/products` and `/cart` loads the React application.
+
+This configuration deploys the frontend. The Express server and its local JSON storage are not deployed by this configuration; `/api` functionality requires a separately configured backend. The Vite API proxy applies only during local development.
